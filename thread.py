@@ -39,7 +39,7 @@ def hello():
         
         else:
             api.update_status_with_media(f"{status}\n{hack()}", filename)
-            print("Tweeted!")
+            print("Tweeted")
             os.remove(filename)
 
     except Exception as e:
