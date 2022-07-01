@@ -32,7 +32,6 @@ def hello():
         status = f"{raw['data']['character']}"
         status = status.replace("%27", "'")
 
-        ## check size of filename if greater than 3MB then resize
         if os.path.getsize(filename) > 3000000:
             api.update_status("413 Payload Too Large")
             print("413 Payload Too Large")
