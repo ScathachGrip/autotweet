@@ -4,7 +4,7 @@ import random
 import string
 
 def better_object(parser: dict):
-    """Converts the json object to a more readable object.
+    """Converts the json
     Parameters
     ----------
     parser : dict
