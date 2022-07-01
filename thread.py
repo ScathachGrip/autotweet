@@ -7,7 +7,7 @@ from threading import Timer
 
 from utils.requests import better_object, deserialize, fetch, hack
 
-enpoint = ["fgo", "genshin_impact", "azur_lane", "waifu", "arknights",
+endpoint = ["fgo", "genshin_impact", "azur_lane", "waifu", "arknights",
            "fire_emblem", "gfl", "hololive", "kancolle", "sex", "gelbooru", "r34", "safebooru"]
 
 animesex = ["ass", "bdsm", "cum", "creampie", "manga", "femdom", "hentai", "incest",
@@ -24,7 +24,7 @@ def setInterval(timer, task):
 
 def hello():
     async def main() -> str:
-        req = await fetch("https://scathach.redsplit.org/v5/fgo/")
+        req = await fetch(f"https://scathach.redsplit.org/v5/{endpoint[0]}/")
         data = json.loads(better_object(req))
         return data
     try:
