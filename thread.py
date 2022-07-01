@@ -7,7 +7,7 @@ from threading import Timer
 
 from utils.requests import better_object, deserialize, fetch, hack
 
-enpoint = ["fgo", "genshin_impact", "azur_lane", "waifu"]
+enpoint = ["fgo", "genshin_impact", "azur_lane", "waifu", "arknights"]
 
 def setInterval(timer, task):
     isStop = task()
