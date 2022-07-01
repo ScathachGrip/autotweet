@@ -7,15 +7,18 @@ from threading import Timer
 
 from utils.requests import better_object, deserialize, fetch, hack
 
-enpoint = ["fgo", "genshin_impact", "azur_lane", "waifu", "arknights", 
-"fire_emblem", "gfl", "hololive", "kancolle", "sex", "gelbooru", "r34", "safebooru"]
+enpoint = ["fgo", "genshin_impact", "azur_lane", "waifu", "arknights",
+           "fire_emblem", "gfl", "hololive", "kancolle", "sex", "gelbooru", "r34", "safebooru"]
 
-animesex = ["ass", "bdsm", "cum", "creampie", "manga", "femdom", "hentai", "incest"]
+animesex = ["ass", "bdsm", "cum", "creampie", "manga", "femdom", "hentai", "incest",
+            "masturbation"]
+
 
 def setInterval(timer, task):
     isStop = task()
     if not isStop:
         Timer(timer, setInterval, [timer, task]).start()
+
 
 def hello():
     async def main() -> str:
@@ -41,7 +44,7 @@ def hello():
             api.update_status("413 Payload Too Large")
             print("413 Payload Too Large")
             os.remove(filename)
-        
+
         else:
             api.update_status_with_media(f"{status}\n{hack()}", filename)
             print("Tweeted")
@@ -51,6 +54,6 @@ def hello():
         print(e)
         return False
 
+
 if __name__ == "__main__":
-    setInterval(120.0, hello) 
-    
+    setInterval(120.0, hello)
