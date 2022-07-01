@@ -43,7 +43,6 @@ def hello():
             os.remove(filename)
 
     except Exception as e:
-        ## api.update_status(e)
         print(e)
         return False # return True if you want to stop
 
