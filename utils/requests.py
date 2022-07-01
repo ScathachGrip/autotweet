@@ -42,6 +42,5 @@ async def fetch(target: str):
     return requests.get(target).json()
 
 def hack() -> str:
-    """Hack the game"""
     a = ''.join([random.choice(string.ascii_letters + string.digits ) for n in range(12)])
     return f"FGO{a}"
