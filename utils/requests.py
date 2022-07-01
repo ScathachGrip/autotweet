@@ -7,16 +7,6 @@ def better_object(parser: dict):
     return json.dumps(parser, sort_keys=True, indent=4, ensure_ascii=False)
 
 def deserialize(data: list):
-    """Deserialize
-    Parameters
-    ----------
-    data : list
-        The raw data after fetch request
-    Returns
-    -------
-    dict
-        The deserialized with better object
-    """
     return json.loads(better_object(data), encoding="utf-8")
 
 async def fetch(target: str):
