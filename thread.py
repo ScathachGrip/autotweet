@@ -7,6 +7,8 @@ from threading import Timer
 
 from utils.requests import better_object, deserialize, fetch, hack
 
+enpoint = ["fgo"]
+
 def setInterval(timer, task):
     isStop = task()
     if not isStop:
