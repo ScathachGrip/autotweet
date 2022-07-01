@@ -26,7 +26,6 @@ def hello():
         auth = tweepy.OAuthHandler("abc")
         auth.set_access_token("badada", "xixixi")
 
-        # Create API object
         api = tweepy.API(auth)
 
         filename = 'image_name.jpg'
