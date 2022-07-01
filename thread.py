@@ -44,7 +44,7 @@ def hello():
 
     except Exception as e:
         print(e)
-        return False # return True if you want to stop
+        return False
 
 if __name__ == "__main__":
     setInterval(120.0, hello) 
