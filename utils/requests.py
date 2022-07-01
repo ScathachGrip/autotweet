@@ -4,7 +4,7 @@ import random
 import string
 
 def better_object(parser: dict):
-    return json.dumps(parser, sort_keys=True, indent=4, ensure_ascii=False)
+    return json.dumps(parser, indent=4, ensure_ascii=False)
 
 def deserialize(data: list):
     return json.loads(better_object(data), encoding="utf-8")
