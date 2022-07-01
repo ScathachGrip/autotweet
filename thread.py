@@ -27,6 +27,7 @@ def hello():
         req = await fetch(f"https://scathach.redsplit.org/v5/{endpoint[0]}/")
         data = json.loads(better_object(req))
         return data
+        
     try:
         raw = asyncio.run(main())
         img_data = requests.get(raw['image']).content
