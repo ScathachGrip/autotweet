@@ -1,2 +1,2 @@
 # Autotweet
-automate your tweet with ease
+automate your tweet with ease with jalak
