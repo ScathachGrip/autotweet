@@ -1,0 +1,4 @@
+tweepy==4.8.0
+requests==2.27.1
+booru==1.0.15
+janda
