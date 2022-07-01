@@ -10,7 +10,7 @@ from utils.requests import better_object, deserialize, fetch, hack
 enpoint = ["fgo", "genshin_impact", "azur_lane", "waifu", "arknights", 
 "fire_emblem", "gfl", "hololive", "kancolle", "sex", "gelbooru", "r34", "safebooru"]
 
-animesex = ["ass"]
+animesex = ["ass", "bdsm"]
 
 def setInterval(timer, task):
     isStop = task()
