@@ -12,7 +12,8 @@ enpoint = ["fgo", "genshin_impact", "azur_lane", "waifu", "arknights",
 
 animesex = ["ass", "bdsm", "cum", "creampie", "manga", "femdom", "hentai", "incest",
             "masturbation", "public", "ero", "orgy", "elves", "yuri", "pantsu",
-            "glasses", "cuckold", "blowjob", "boobjob", "foot", "thighs", "vagina", "ahegao"]
+            "glasses", "cuckold", "blowjob", "boobjob", "foot", "thighs", 
+            "vagina", "ahegao", "uniform"]
 
 
 def setInterval(timer, task):
