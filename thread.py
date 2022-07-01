@@ -43,7 +43,6 @@ def hello():
             os.remove(filename)
 
     except Exception as e:
-        ## os.remove('image_name.jpg')
         ## api.update_status(e)
         print(e)
         return False # return True if you want to stop
