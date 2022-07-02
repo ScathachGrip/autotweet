@@ -29,6 +29,16 @@ def deserialize(data: list):
     return json.loads(better_object(data), encoding="utf-8")
 
 async def fetch(target: str):
+    """Fetches the data from the target
+    Parameters
+    ----------
+    target : str
+        The target URL
+    Returns
+    -------
+    list
+        The raw data
+    """
     return requests.get(target).json()
 
 def hack() -> str:
