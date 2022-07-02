@@ -42,5 +42,11 @@ async def fetch(target: str):
     return requests.get(target).json()
 
 def gimmick() -> str:
+    """Generates post description
+    Returns
+    -------
+    str
+        The post description
+    """
     content = ''.join([random.choice(string.ascii_letters + string.digits ) for n in range(12)])
     return f"FGO{content}"
