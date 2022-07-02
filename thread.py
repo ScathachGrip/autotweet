@@ -31,7 +31,7 @@ def hello():
     try:
         raw = asyncio.run(main())
         img_data = requests.get(raw['image']).content
-        with open('image_name.jpg', 'wb') as handler:
+        with open('content.jpg', 'wb') as handler:
             handler.write(img_data)
 
         auth = tweepy.OAuthHandler("abc")
@@ -39,7 +39,7 @@ def hello():
 
         api = tweepy.API(auth)
 
-        filename = 'image_name.jpg'
+        filename = 'content.jpg'
         status = f"{raw['data']['character']}"
         status = status.replace("%27", "'")
 
