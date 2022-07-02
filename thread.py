@@ -5,7 +5,7 @@ import requests
 import os
 from threading import Timer
 
-from utils.requests import better_object, deserialize, fetch, hack
+from utils.requests import better_object, deserialize, fetch, gimmick
 
 endpoint = ["fgo", "genshin_impact", "azur_lane", "waifu", "arknights",
            "fire_emblem", "gfl", "hololive", "kancolle", "sex", "gelbooru", "r34", "safebooru"]
@@ -49,7 +49,7 @@ def hello():
             os.remove(filename)
 
         else:
-            api.update_status_with_media(f"{status}\n{hack()}", filename)
+            api.update_status_with_media(f"{status}\n{gimmick()}", filename)
             print("Tweeted")
             os.remove(filename)
 
