@@ -22,7 +22,7 @@ def setInterval(timer, task):
         Timer(timer, setInterval, [timer, task]).start()
 
 
-def hello():
+def tweet():
     async def main() -> str:
         req = await fetch(f"https://scathach.redsplit.org/v5/{endpoint[0]}/")
         data = json.loads(better_object(req))
@@ -59,4 +59,4 @@ def hello():
 
 
 if __name__ == "__main__":
-    setInterval(60.0, hello)
+    setInterval(60.0, tweet)
