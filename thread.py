@@ -59,4 +59,4 @@ def hello():
 
 
 if __name__ == "__main__":
-    setInterval(120.0, hello)
+    setInterval(60.0, hello)
