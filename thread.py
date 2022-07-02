@@ -5,7 +5,7 @@ import requests
 import os
 from threading import Timer
 
-from utils.requests import better_object, deserialize, fetch, gimmick
+from utils.requests import better_object, fetch, gimmick
 
 endpoint = ["fgo", "genshin_impact", "azur_lane", "waifu", "arknights",
            "fire_emblem", "gfl", "hololive", "kancolle", "sex", "gelbooru", "r34", "safebooru"]
