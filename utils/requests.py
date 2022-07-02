@@ -4,6 +4,15 @@ import random
 import string
 
 def better_object(parser: dict):
+    """Converts the json object to a more readable object.
+    Parameters
+    ----------
+    parser : dict
+    Returns
+    -------
+    dict
+        The new dictionaries with neat keys.
+    """
     return json.dumps(parser, indent=4, ensure_ascii=False)
 
 def deserialize(data: list):
