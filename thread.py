@@ -60,4 +60,4 @@ def tweet():
 
 
 if __name__ == "__main__":
-    setInterval(60.0, tweet)
+    setInterval(120.0, tweet)
